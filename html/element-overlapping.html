@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CSS Course</title>
+    <style>
+      body{
+        padding: 0 100px;
+      }
+      .container{
+        border: 1px solid black;
+      }
+      .box{
+        width: 150px;
+        height: 75px;
+        margin: 5px 0;
+        border: 2px solid black;
+      }
+      .one{
+        background-color: red;
+        position: relative;
+        z-index: -2;
+      }
+      .two{
+        background-color: green;
+        position: relative;
+        left: 50px;
+        bottom: 50px;
+        z-index: 1;
+      }
+      .three{
+        background-color: blue;
+        position: relative;
+        left: 100px;
+        bottom: 100px;
+        z-index: -1;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <h3>CSS Course</h3>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse optio veniam ducimus quo! Blanditiis et nobis libero, nesciunt doloremque ducimus inventore quia eius, beatae voluptatibus quasi placeat, magni officia.</p>
+      <div class="box one">One</div>
+      <div class="box two">Two</div>
+      <div class="box three">Three</div>
+    </div>
+  </body>
+</html>
