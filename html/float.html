@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Float</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      .container{
+        border: 2px solid gray;
+        padding: 20px 0;
+        height: 30px;
+      }
+      .box{
+        width: 100px;
+        height: 25px;
+        background-color: goldenrod;
+        margin: 2px;
+        /* display: inline-block; */
+      }
+      .one{
+        float: right;
+      }
+      .two{
+        float: right;
+      }
+      .three{
+        /* float: left; */
+        height: 30px;
+        background-color: blueviolet;
+        /* clear: right; */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box one">One</div>
+      <div class="box two">Two</div>
+      <div class="box three">Three</div>
+    </div>
+  </body>
+</html>

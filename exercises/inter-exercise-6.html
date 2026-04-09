@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Exercise-6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      /* nav{
+        border: 2px solid black;
+        min-height: 100px;
+      } */
+      nav>div{
+        display: inline-block;
+      }
+      nav>div:last-child{
+        float: right;
+      }
+      nav>div>ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      nav>div>ul li{
+        float: left;
+        background-color: purple;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: 2px solid black;
+      }
+      nav>div>ul li>a{
+        color: white;
+        text-decoration: none;
+      }
+      section{
+        height: 550px;
+      }
+      section>div{
+        float: left;
+        width: 44%;
+        margin: 0 20px;
+        margin-bottom: 10px;
+      }
+      section>div:first-child{
+        margin-right: 3%;
+      }
+      section>div:last-child{
+        margin-left: 2%;
+      }
+      section img{
+        display: block;
+        width: 250px;
+         margin: 10px auto;
+         border: 1px solid black;
+      }
+      section > div:nth-child(2) ul{
+        list-style-type: none;
+      }
+      section> div:nth-child(2) ul li{
+        margin: 30px 0;
+        font-size: 20px;
+      }
+      section> div:nth-child(2) ul li::before{
+        content: url(../Images/icon2.png);
+      }
+      
+      footer{
+        clear: left;
+        background-color: black;
+        color: white;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu1">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu2">
+        <ul>
+          <li><a href="">Login</a></li>
+          <li><a href="">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="photo">
+        <img src="../Images/land.jpg" alt="Land">
+        <img src="../Images/land4.jpg" alt="Land2">
+        <img src="../Images/land5.jpg" alt="Land3">
+      </div>
+      <div class="item">
+        <ul>
+          <li>item - 1</li>
+          <li>item - 2</li>
+          <li>item - 3</li>
+          <li>item - 4</li>
+          <li>item - 5</li>
+          <li>item - 6</li>
+        </ul>
+      </div>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Pseudo-Class2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      p:first-child{
+        background-color: red;
+      }
+      p:last-child{
+        background-color: rebeccapurple;
+      }
+      /* p:nth-child(4){
+        background-color: bisque;
+      } */
+      p:not(p:nth-child(4)){
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <p>Paragraph 5</p>
+  </body>
+</html>

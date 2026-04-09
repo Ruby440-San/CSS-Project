@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Element Selectors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <style>
+      
+      p[title]{
+        color: red;
+      }
+      /* CSS [attribute] seletor */
+      p[class]{
+        color: blue;
+      }
+      /* CSS [attribute="value"] selector */
+      p[class="para3"]{
+        background-color: green;
+        color: black;
+      }
+      /* CSS [attribute ~="value"] selector */
+    p[class~="text"]{
+        background-color: blueviolet;
+        color: white;
+      }
+      /* CSS [attribute|="value"] selector */
+      p[class|="text"]{
+        background-color: brown;
+        color: black;
+      }
+      /* CSS [attribute ^="value"] selector */
+      p[class ^="para"]{
+        background-color: yellow;
+        color: black;
+      }
+      /* CSS [attribute $="value"] selector */
+      p[class $="text"]{
+        background-color: rgb(223, 176, 142);
+      }
+      /* CSS [attribute $="value"] selector */
+      p[title *="center"]{
+        background-color: orange;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p title="para1 text-center">Para-1</p>
+    <p class="para2 text-small">Para-2</p>
+    <p class="para3 text">Para-3</p>
+    <p class="text-para4">Para-4</p>
+    <p class="text- para5">Para-5</p>
+
+  </body>
+</html>

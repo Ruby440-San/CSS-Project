@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Pseudo-Class</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      img{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        display: block;
+      }
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        margin: auto;
+        text-align: center;
+        line-height: 200px;
+      }
+      .container{
+        border: 2px solid gray;
+        width: 300px;
+        margin: auto;
+        padding: 10px;
+      }
+      .container:hover img, .container:hover .box{
+        border-radius: 50%;
+        margin: 2px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../Images/land4.jpg" alt="Land">
+    <div class="box">
+      Hello
+    </div>
+    </div>
+    
+  </body>
+</html>
+
