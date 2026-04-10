@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Advance Animations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        /* display: block; */
+        margin: 5px 0;
+      
+        animation: growth 3s ease-in 1s 3 alternate-reverse;
+      }
+
+        /* animation-name: growth;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        /* animation-direction: reverse;
+        animation-direction: alternate-reverse; 
+      }*/
+      /* div{
+        width: 100px;
+        height: 50px;
+        background-color: bisque;
+        margin: 5px 0;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+
+        animation-name: div;
+        animation-duration: 3s;
+      }
+      div:nth-child(1){
+        animation-timing-function: ease;
+        animation-delay: 1s;
+      }
+      div:nth-child(2){
+        animation-timing-function: linear;
+        animation-delay: 2s;
+      }
+      div:nth-child(3){
+        animation-timing-function: ease-in;
+        animation-delay: 3s;
+      }
+      div:nth-child(4){
+        animation-timing-function: ease-out;
+        animation-delay: 4s;
+      }
+      div:nth-child(5){
+        animation-timing-function: ease-in-out;
+        animation-delay: 5s;
+      }  */
+
+      
+
+      @keyframes growth{
+        from{
+          left: 0px;
+        }
+        to{
+          left: 500px;
+        }
+      } 
+
+    </style>
+  </head>
+  <body>
+    <img src="../Images/land7.jpg" alt="Land">
+     <!-- <div>ease</div>
+     <div>linear</div>
+     <div>ease-in</div>
+     <div>ease-out</div>
+     <div>easse-in-out</div> -->
+  </body>
+</html>
