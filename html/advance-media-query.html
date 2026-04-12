@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Advance Media Query</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      .container{
+        height: 300px;
+        border: 2px solid red;
+      }
+      .screen-l{display: block;}
+      .screen-m{display: none;}
+      .screen-s{display: none;}
+      @media (max-width:700px){
+        .container{
+          background-color: rgb(81, 21, 21);
+          color: white;
+        }
+      .screen-l{display: none;}
+      .screen-m{display: block;}
+      .screen-s{display: none;}
+      }
+      @media (max-width:500px){
+        .container{
+          background-color: rgb(40, 40, 82);
+          color: white;
+        }
+        .screen-l{display: none;}
+        .screen-m{display: none;}
+        .screen-s{display: block;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="screen-l">Large Screen</h1>
+      <h1 class="screen-m">Medium Screen</h1>
+      <h1 class="screen-s">Small Screen</h1>
+    </div>
+  </body>
+</html>

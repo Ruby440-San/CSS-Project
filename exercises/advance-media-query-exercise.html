@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Query Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      nav{
+        display: flex;
+        justify-content: space-between;
+      }
+      nav div{
+        flex-basis: 200px;
+        height: 50px;
+        background-color: rgb(119, 76, 159);
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        margin: 0 10px;
+      }
+      section{
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+      }
+      section div:first-child{
+       flex-basis: 80%;
+      }
+      section div:last-child{
+        flex-basis: 20%;
+      }
+      section div:last-child img{
+        border-radius: 5px;
+        box-shadow: 6px 6px 4px  rgb(119, 76, 159);
+      }
+
+      @media (max-width: 500px){
+        nav{
+          flex-direction: column;
+        }
+        nav div{
+          flex-basis: 100%;
+          margin: 3px 0;
+        }
+        section{
+          flex-direction: column-reverse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>Home</div>
+      <div>About</div>
+      <div>Service</div>
+      <div>Contact Us</div>
+    </nav>
+    <section>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore architecto aperiam necessitatibus illo? Suscipit, harum. Nesciunt harum consequuntur animi voluptate suscipit accusantium officiis quod! Odit, accusamus quia? Provident, sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore architecto aperiam necessitatibus illo? Suscipit, harum. Nesciunt harum consequuntur animi voluptate suscipit accusantium officiis quod! Odit, accusamus quia? Provident, sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore architecto aperiam necessitatibus illo? Suscipit, harum. Nesciunt harum consequuntur animi voluptate suscipit accusantium officiis quod! Odit, accusamus quia? Provident, sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore architecto aperiam necessitatibus illo? Suscipit, harum. Nesciunt harum consequuntur animi voluptate suscipit accusantium officiis quod! Odit, accusamus quia? Provident, sequi.</p>
+      </div>
+      <div>
+        <img src="../Images/rose.jpg" alt="Rose">
+      </div>
+      
+    </section>
+  </body>
+</html>
