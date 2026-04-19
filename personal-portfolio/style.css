@@ -1,17 +1,30 @@
+@font-face{
+  font-family: 'Poppins';
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #fff;
+  font-family: 'Poppins';
+  /* scroll-behavior: smooth; */
 }
-
 .main-container{
   background-color: #ec3cae;
   padding-top: 50px;
 }
+/* Common */
 .container{
   max-width: 900px;
   margin: auto;
   display: flex;
+}
+.container:not(#header .container){
+  padding: 10px;
+}
+.box-shadow{
+  box-shadow: 3px 3px 8px black;
 }
 .section-title{
   text-align: center;
@@ -23,7 +36,6 @@
 /* Header CSS */
 #header .container{
   background-color: #022293;
-  color: white;
   border: 5px solid white;
   border-radius: 5px;
   align-items: center;
@@ -37,7 +49,7 @@
   letter-spacing: 10px;
 }
 #header .container .content h4,
-#header .container .content h1,
+#header .container .content h2,
 #header .container .content p{
   margin-bottom: 20px;
 }
@@ -49,18 +61,17 @@
   border-radius: 5px;
 }
 .social-icons a{
-  color: white;
    margin: 15px;
 }
-.social-icons a:first-child{
+.social-icons a:first-child i{
   color: red;
   font-size: 30px;
 }
-.social-icons a:last-child{
+.social-icons a:last-child i{
   color: blue;
   font-size: 30px;
 }
-.social-icons a:nth-child(2){
+.social-icons a:nth-child(2) i{
   color: pink;
   font-size: 30px;
 }
@@ -76,8 +87,8 @@
   line-height: 40px;
 }
 #about-me .image-div img{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   display: block;
   margin: auto;
@@ -102,15 +113,13 @@
   border-radius: 5px;
   font-weight: bold;
 }
-#myskills .content h3{
-  color: white;
-}
+
 #myskills .content .title2,
 .title3{
   margin-top: 30px;
 }
 #myskills .image-div img{
-  width: 300px;
+  width: 100%;
   display: block;
   margin: auto;
   border-radius: 5px;
@@ -124,9 +133,14 @@
   flex-basis: 30%;
   background-color: #022293;
   padding: 20px 10px;
-  color: white;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
+  transition: transform 1s, background-color 1s;
+}
+#myworks .card:hover{
+  background-color: #ec3cae;
+  transform: scale(1.1);
 }
 #myworks .card h3{
   margin: 20px 0;
@@ -141,48 +155,47 @@
 #contact-me .container ul{
   list-style-type: none;
   line-height: 40px;
-  color: #fff;
   font-weight: bold;
 }
-#contact-me .container ul span{
+#contact-me .container span i{
   color: #000;
   margin: 0 10px;
   font-size: 20px;
 }
 #contact-me .form .form-group{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   justify-content: space-between;
 }
 #contact-me .form input,
 textarea{
   border: none;
   border-radius: 5px;
+  color: #000;
 }
 #contact-me .form .form-group input{
   flex-basis: 49%;
-  height: 35px;
+  height: 50px;
   padding: 0 10px;
 }
 #contact-me .form textarea{
   width: 100%;
   height: 100px;
   padding: 10px 10px;
+  margin-bottom: 10px;
 }
 #contact-me .form button{
   padding: 7px 30px;
   background-color: #022293;
   border: none;
   font-weight: bold;
-  color: #fff;
   border-radius: 5px;
-  margin-top: 10px;
   float: right;
 }
 /* Footer CSS */
 footer{
   background-color: #022293;
-  color: #fff;
+  padding: 30px 0 100px 0;
 }
 footer .container{
   justify-content: space-between;
@@ -201,6 +214,79 @@ footer .container h3{
 }
 footer .column> ul li a{
   text-decoration: none;
-  color: #fff;
   line-height: 35px;
+}
+#gototop{
+  background-color: orange;
+  display: block;
+  width: 45px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width:600px){
+  .main-container{
+   
+  }
+  #header .container{
+    flex-direction: column-reverse;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 0px;
+  }
+  #header .content{
+    padding: 20px 0;
+  }
+  
+  #about-me .container{
+    flex-direction: column;
+    text-align: center;
+  }
+  #about-me .content{
+    margin-top: 20px;
+  }
+  #myskills .container{
+    flex-direction: column-reverse;
+  }
+  /* #myskills .image-div img{
+    margin-bottom: 20px;
+  } */
+  #myskills .content{
+    text-align: center;
+    padding: 20px 0;
+  }
+  #myworks .container{
+    flex-direction: column;
+  }
+  #myworks .card{
+    margin: 10px auto;
+    width: 90%;
+  }
+  #contact-me .container{
+    flex-direction: column;
+  }
+  #contact-me .form .form-group{
+    flex-direction: column;
+  }
+  #contact-me .form .form-group input{
+    padding: 10px;
+  }
+  #contact-me .form .form-group input:first-child{
+    margin-bottom: 10px;
+  }
+  footer .container{
+    flex-direction: column;
+  }
+  footer .column{
+    margin: 20px 0;
+  }
+  footer .column h3{
+    margin-bottom: 8px;
+  }
 }
