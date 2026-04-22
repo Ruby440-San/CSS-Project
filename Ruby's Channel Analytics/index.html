@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Channel Analytics</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+     
+    <section class="main-page">
+      <div class="main-container">
+        <div class="container">
+          <!-- Side-bar Section -->
+           <aside class="side-bar">
+            <div class="up-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ev-station" viewBox="0 0 16 16">
+  <path d="M3.5 2a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zm2.131 10.46H4.14v-.893h1.403v-.505H4.14v-.855h1.49v-.54H3.485V13h2.146zm1.316.54h.794l1.106-3.333h-.733l-.74 2.615h-.031l-.747-2.615h-.764z"/>
+  <path d="M3 0a2 2 0 0 0-2 2v13H.5a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1H11v-4a1 1 0 0 1 1 1v.5a1.5 1.5 0 0 0 3 0V4a.5.5 0 0 0-.146-.354l-.5-.5a.5.5 0 0 0-.707 0l-.5.5A.5.5 0 0 0 13 4v3c0 .71.38 1.096.636 1.357l.007.008c.253.258.357.377.357.635v3.5a.5.5 0 1 1-1 0V12a2 2 0 0 0-2-2V2a2 2 0 0 0-2-2zm7 2v13H2V2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"/>
+</svg>
+            </div>
+
+            <div class="mid-icons">
+              <div class="house-door">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+</svg>
+              </div>
+
+              <div class="crosshair">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-crosshair2" viewBox="0 0 16 16">
+  <path d="M8 0a.5.5 0 0 1 .5.5v.518A7 7 0 0 1 14.982 7.5h.518a.5.5 0 0 1 0 1h-.518A7 7 0 0 1 8.5 14.982v.518a.5.5 0 0 1-1 0v-.518A7 7 0 0 1 1.018 8.5H.5a.5.5 0 0 1 0-1h.518A7 7 0 0 1 7.5 1.018V.5A.5.5 0 0 1 8 0m-.5 2.02A6 6 0 0 0 2.02 7.5h1.005A5 5 0 0 1 7.5 3.025zm1 1.005A5 5 0 0 1 12.975 7.5h1.005A6 6 0 0 0 8.5 2.02zM12.975 8.5A5 5 0 0 1 8.5 12.975v1.005a6 6 0 0 0 5.48-5.48zM7.5 12.975A5 5 0 0 1 3.025 8.5H2.02a6 6 0 0 0 5.48 5.48zM10 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+</svg>
+              </div>
+
+              <div class="circle-fill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fast-forward-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M4.79 5.093 8 7.386V5.5a.5.5 0 0 1 .79-.407l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 8 10.5V8.614l-3.21 2.293A.5.5 0 0 1 4 10.5v-5a.5.5 0 0 1 .79-.407"/>
+</svg>
+              </div>
+
+              <div class="globe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
+</svg>
+              </div>
+
+            </div>
+
+            <div class="down-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-optical-audio-fill" viewBox="0 0 16 16">
+  <path d="M8 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6m1 3a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/>
+  <path d="M2.5 15a.5.5 0 0 1-.5-.5v-3.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 1 .146-.354l2-2A.5.5 0 0 1 4.5 2h7a.5.5 0 0 1 .354.146l2 2A.5.5 0 0 1 14 4.5v2.05a2.5 2.5 0 0 1 0 4.9v3.05a.5.5 0 0 1-.5.5zM8 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+</svg>
+            </div>
+
+          </aside>
+
+          <div>
+            <div class="main-title">
+              <div class="title">Channel Analytics</div>
+                <div class="top-icons">
+                  <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
+                  </div>
+
+                  <div class="ruby">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-r-circle" viewBox="0 0 16 16">
+  <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002h3.11c1.71 0 2.741.973 2.741 2.46 0 1.138-.667 1.94-1.495 2.24L11.5 12H9.98L8.52 8.924H6.836V12H5.5zm1.335 1.09v2.777h1.549c.995 0 1.573-.463 1.573-1.36 0-.913-.596-1.417-1.537-1.417z"/>
+</svg>
+                 </div>
+
+                 <div class="car">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
+  <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
+  <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
+</svg>
+                 </div>
+
+                </div>
+            </div>
+
+          <!-- Dashboard Section -->
+          <div class="card-container">
+            <div class="optimize-card">
+              <div class="optimize-part1">
+                <div class="bar"></div>
+                <h1>Optimize<br>Your Metrics</h1>
+              <button>Start Now</button>
+              <div class="image-part">
+                <img src="Images/car.jpg" alt="Car">
+              </div>
+              </div>
+              
+
+              <div class="optimize-part2">
+                <div class="speed">
+                  <h1>76k</h1>
+                  <p>Monthly Reach</p>
+                </div>
+                <div class="speed">
+                  <h1>1.5m</h1>
+                  <p>Total Impressions</p>
+                </div>
+                <div class="speed">
+                  <h1>3.0k</h1>
+                  <p>New Subscribers</p>
+                </div>
+                <div class="speed">
+                  <h1>47</h1>
+                  <p>Campaign Runs</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="main-average-card">
+              <div class="average-card">
+              <h4>AVERAGE WATCH FIGURES</h4>
+              <svg class="line" viewBox="0 0 300 126" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                          <path d="M10 92C38 82 52 24 88 30C122 34 128 88 164 82C196 76 210 42 236 56C262 70 270 98 290 44" stroke="#f2c05d" stroke-width="4" stroke-linecap="round"/>
+                                          <path d="M10 102C44 104 56 66 90 62C124 58 136 86 170 88C204 90 220 34 258 38C272 40 282 62 290 78" stroke="#bacb67" stroke-width="4" stroke-linecap="round"/>
+                                      </svg>
+            </div>
+            <div class="sale-rate-card">
+
+              <div class="box">
+                <h5>SALE RATE</h5>
+              <h1>$586</h1>
+              <p>Smart watch edition</p>
+              </div>
+
+              <div class="block"></div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="overview">
+          <div class="overview-text">
+            <div>Your top videos in this quarter</div>
+            <div>Growth trends,views and average retention</div>
+          </div>
+            <button class="overview-button">Overview</button>
+        </div>
+
+      <div class="list">
+        <div class="list-child">VIDEO</div>
+        <div class="list-child">WATCH TIME</div>
+        <div class="list-child">EARNING</div>
+        <div class="list-child">TREND</div>
+      </div>
+      
+      <div class="main-block">
+      <div class="design-brand">
+
+          <div class="block1"></div>
+            <div class="text">
+              
+              <div>How to Grow a Design Brand</div>
+              <div>Behind-the-sences strategy breakdown</div>
+
+            </div>
+
+          <div class="k-per-hrs">
+            <div>6.2 hrs</div>
+            <div>$2.4k</div>
+          </div>
+      </div>
+
+      <div class="launch-recap">
+        <div class="block2"></div>
+        <div class="text">
+        <div>Creative Launch Recap</div>
+        <div>Audience growth fro the lastest campaign</div>
+        </div>
+
+          <div class="k-per-hrs">
+            <div>4.8 hrs</div>
+            <div>$1.7k</div>
+          </div>
+
+        </div>
+        
+        
+      </div>
+      </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+  </body>
+</html>
