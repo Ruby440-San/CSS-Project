@@ -1,4 +1,3 @@
-
 *{
   margin:0;
   padding:0;
@@ -105,6 +104,23 @@ body{
   background:#f3eadf;
   color:#000;
   font-weight:700;
+}
+.optimize-card:hover,
+.average-card:hover,
+.sale-rate-card:hover,
+.overview:hover{
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 6px rgb(50, 55, 85);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.design-brand:hover,
+.launch-recap:hover{
+  transform: translateX(6px);
+  box-shadow: 5px 5px 6px rgb(50, 55, 85);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .image-part img{
@@ -298,7 +314,7 @@ body{
     grid-template-columns: 1fr;
   }
 
-  /* hover */
+
 .optimize-card:hover,
 .average-card:hover,
 .sale-rate-card:hover,
